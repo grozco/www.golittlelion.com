@@ -1,0 +1,143 @@
+# Site settings
+baseurl = "http://www.golittlelion.com/"
+languageCode = "en-us"
+title = "Little Lion"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Little Lion"
+  description = ""
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation
+  [params.navigation]
+    brand = "Little Lion"
+    #logo = "logo.svg"
+    services = "Services"
+    portfolio = "Partners"
+    team = "Team"
+    contact = "Contact"
+
+  # Hero section
+  [params.hero]
+    title = "Step out of the box, into the Wild"
+    subtitle = "We’ll help you roar!"
+    buttonText = "Roam"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    subtitle = "Big data story-telling, fueled by domain expertise and innovative technology"
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-unlock"
+      title = "Business Application"
+      description = "Too much data. Where to begin? What is the value-add?"
+      calltoaction = "We tell you why it matters."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-link"
+      title = "Data Integration"
+      description = "Different sources. Disparate data. Multiple data sets."
+      calltoaction = "We link it all together."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-picture-o"
+      title = "Visual Analytics"
+      description = "Speed. Flexibility. Quick insights. Real-time implications."
+      calltoaction = "We bring the data to life."
+      url = "#"
+
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+
+
+  # About section
+  [params.about]
+    enable = false
+    title = "About"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of our<br>story!"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = ""
+    description = ""
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "liem.jpg"
+      name = "Liem Le"
+      position = "Founder / CEO"
+      bio = """Liem brings extensive experience in marketing, sales, and operational excellence from the corporate and startup world. She saw a gap between companies with domain expertise and companies with technology expertise, and built a bridge to unify the two. Little Lion embodies her vision to collectively collaborate, inspire, empower, and move companies forward. 
+
+Critical Thinker. Problem Solver.  High Energy. Positive Impact. Change Agent."""
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/liem-le-45420ba/"]
+      ]
+
+    [[params.team.members]]
+      img = "rob.jpg"
+      name = "Rob Grzywinski"
+      position = "CTO Advisor"
+      bio = """Rob is a Silicon Valley CTO with multiple successful exits. He combines entrepreneurial instinct, stellar technical skills and infectious enthusiasm for transforming the impossible into possible. Establishes rapport with members of diverse groups and is a universal translator between business, product and technology. Recognizes excellence in individuals, provides effective mentoring and inspires to achieve their potential. Decisive leader that fosters a culture of accountability, integrity and respect."""
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/rob-grzywinski-26b31/"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      center = true
+      # Optional client title specifying the involvement
+      title = "Our Partners"
+
+      [[params.clients]]
+        logo = "intersog.png"
+        link = "https://intersog.com/"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    headline = "Let's Partner!"
+    description = "Give us a call or send us an email and we'll get started!"
+    phone = "(415) 347-1445"
+    email = "info@golittlelion.com"
+
+  # Footer section
+  [params.footer]
+    enable = false
